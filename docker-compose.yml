@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    image: "masz/tree-api"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./.docker.env:/app/.env
+      - ./app/data.db:/app/data.db
